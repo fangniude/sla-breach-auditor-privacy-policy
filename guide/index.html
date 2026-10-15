@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Getting started with SLA Breach Auditor for Jira Service Management Cloud.">
+  <title>SLA Breach Auditor — User Guide</title>
+  <style>
+    :root { color-scheme: light dark; font: 16px/1.65 system-ui, sans-serif; }
+    body { max-width: 850px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2rem; }
+    .meta { color: #666; }
+    @media (prefers-color-scheme: dark) { .meta { color: #aaa; } }
+    a { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <article lang="en">
+      <h1>SLA Breach Auditor — User Guide</h1>
+      <p class="meta">For Jira Service Management Cloud</p>
+      <p>SLA Breach Auditor reviews historical breaches of native Jira Service Management SLA metrics. It reconstructs the Jira assignee at the recorded breach time from available Jira history and shows when the evidence is missing or ambiguous.</p>
+
+      <h2>Run a report</h2>
+      <ol>
+        <li>Open SLA Breach Auditor from the Jira app navigation.</li>
+        <li>Choose a project scope or enter an advanced JQL scope.</li>
+        <li>Select the native SLA metrics, date range, and report time zone.</li>
+        <li>Start the report run and review its results when it completes.</li>
+      </ol>
+
+      <h2>Review and reuse results</h2>
+      <p>Review breach records, attribution states, evidence traces, coverage, and warnings. Use the available filters and aggregations to narrow the results. You can save a report definition for later and manually rerun it; a rerun creates a new report run using the inputs resolved at that time. Export the currently filtered results to CSV.</p>
+
+      <h2>Access and limitations</h2>
+      <p>Reports are private to their creator. Jira visibility is checked using the creator’s current permissions when records are read. Missing, contradictory, permission-limited, or ambiguous history is reported as a limitation rather than guessed. The app does not change Jira issues or SLA settings.</p>
+      <p>The app is for historical review. It does not provide real-time monitoring, alerts, scheduled reports, prediction, or performance scoring. Results are audit evidence and are not a verdict about an individual’s performance or responsibility.</p>
+
+      <h2>Privacy</h2>
+      <p>Read the <a href="../">SLA Breach Auditor Privacy Policy</a> for information about data processing, storage, retention, deletion, and privacy requests.</p>
+    </article>
+
+    <hr>
+
+    <article lang="zh-CN">
+      <h1>《SLA Breach Auditor》使用指南</h1>
+      <p class="meta">适用于 Jira Service Management Cloud</p>
+      <p>《SLA Breach Auditor》用于复核 Jira Service Management 原生 SLA 指标的历史违约记录。应用会根据可用的 Jira 历史记录还原违约时的工单经办人，并明确显示证据缺失或含糊的情况。</p>
+
+      <h2>运行报告</h2>
+      <ol>
+        <li>从 Jira 应用导航中打开 SLA Breach Auditor。</li>
+        <li>选择项目范围，或输入高级 JQL 范围。</li>
+        <li>选择原生 SLA 指标、日期范围和报告时区。</li>
+        <li>启动报告运行，并在完成后查看结果。</li>
+      </ol>
+
+      <h2>复核和复用结果</h2>
+      <p>查看违约记录、归因状态、证据轨迹、覆盖情况和警告。使用可用的筛选和汇总缩小结果范围。你可以保存报告定义以便稍后手动重新运行；重新运行会根据当时解析的输入创建一份新的报告运行结果。当前筛选结果可导出为 CSV。</p>
+
+      <h2>访问控制和功能范围</h2>
+      <p>报告仅对创建者可见。读取记录时，应用会依据创建者当前权限检查 Jira 可见性。对于缺失、矛盾、受权限限制或含糊的历史信息，应用会显示相应限制，不会猜测。本应用不会修改 Jira 工单或 SLA 设置。</p>
+      <p>本应用用于历史复核，不提供实时监控、提醒、定时报告、预测或绩效评分。报告是审计证据，不用于判定个人绩效或责任。</p>
+
+      <h2>隐私</h2>
+      <p>数据处理、存储、保留期限、删除和隐私请求方式请参阅<a href="../">《SLA Breach Auditor 隐私政策》</a>。</p>
+    </article>
+  </main>
+</body>
+</html>
